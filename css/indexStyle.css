@@ -1,3 +1,9 @@
+:root {
+    --black-25: rgba(25, 25, 25, .25);
+    --black-50: rgba(25, 25, 25, .50);
+    --white-50: rgba(255, 255, 255, .50);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +11,10 @@
 }
 
 body {
-    background-color: rgb(30, 30, 30);
+    background-image: url("/img/index-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 70%;
     color: white;
     height: 100vh;
     box-sizing: border-box;
@@ -14,10 +23,16 @@ body {
 }
 
 header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2.5% 10%;
+
+    & #logo {
+        filter: invert(1);
+        width: 90%;
+    }
 
     & nav ul {
         list-style: none;
@@ -29,9 +44,8 @@ header {
             text-align: center;
         }
 
-        & li:hover {
-            background-color: rgb(25, 25, 25);
-            border-radius: 0.5rem;
+        & li > a > i:hover {
+            color: var(--white-50);
         }
 
         & a {
@@ -41,17 +55,61 @@ header {
     }
 }
 
-main {
-    background-color: green;
+header > a {
     display: flex;
+    align-items: center;
 }
 
-@media (max-width: 720px) {
+main > #section1 {
+    grid-area: uno;
+}
+
+main > #section2 {
+    grid-area: dos;
+}
+
+main > #section3 {
+    grid-area: tres;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "uno dos" 
+        "uno tres";
+    padding: 2%;
+}
+
+
+
+main .sec {
+    background-color: var(--black-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    border-radius: 2%;
+}
+
+@media (max-width: 850px) {
+    main {
+        grid-template-areas:
+            "uno uno"
+            "uno uno"
+            "dos tres"
+            "dos tres";
+    }
+}
+
+@media (max-width: 600px) {
     header {
         flex-direction: column;
-        & nav {
-            margin-top: 5%;
 
+        & #logo {
+            margin-bottom: 7.5%;
+        }
+
+        & nav {
             & ul {
                 flex-wrap: wrap;
                 justify-content: center;
@@ -61,5 +119,11 @@ main {
                 }
             }
         }
+    }
+
+    header > a {
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 }
