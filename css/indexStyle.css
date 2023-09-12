@@ -1,9 +1,13 @@
 :root {
+    --yellow: rgb(255, 217, 0);
     --black-25: rgba(25, 25, 25, .25);
     --black-50: rgba(25, 25, 25, .50);
+    --black-75: rgba(25, 25, 25, .75);
     --white-50: rgba(255, 255, 255, .50);
+    --degradado-90: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     --degradado-180: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     --degradado-360: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    --degradado-radial: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 * {
@@ -19,6 +23,10 @@
     width: 100%;
     height: 100vh;
     animation: start 1s ease-in forwards;
+}
+
+span {
+    color: var(--yellow);
 }
 
 body {
@@ -56,7 +64,7 @@ header {
         }
 
         & li > a > i:hover {
-            color: var(--white-50);
+            animation: selectSection 0.5s forwards;
         }
 
         & a {
@@ -73,14 +81,27 @@ header > a {
 
 main > #section1 {
     grid-area: uno;
+    font-size: larger;
 }
 
 main > #section2 {
     grid-area: dos;
+    background: var(--degradado-radial), url("/img/e-ray.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: end;
 }
 
 main > #section3 {
     grid-area: tres;
+    background-image: var(--degradado-radial), url("/img/who-am-i.jpg");
+    background-size: cover;
+    justify-content: end;
+}
+
+#section2:hover, #section3:hover {
+    animation: selectSection 0.5s forwards;
+    cursor: pointer;
 }
 
 main {
@@ -93,6 +114,7 @@ main {
     & .sec {
         background-color: var(--black-50);
         display: flex;
+        font-size: normal;
         flex-direction: column;
         justify-content: center;
         padding: 2%;
@@ -121,6 +143,12 @@ footer {
     align-items: center;
     padding: .5%;
     background: var(--degradado-360);
+}
+
+@media (min-width: 550px) {
+    main > #section1 > div {
+        font-size: 6vh;
+    }
 }
 
 @media (max-width: 850px) {
@@ -182,5 +210,14 @@ footer {
     to {
         opacity: 0%;
         display: none;
+    }
+}
+
+@keyframes selectSection {
+    from {
+        color: white;
+    }
+    to {
+        color: rgb(255, 217, 0);
     }
 }
