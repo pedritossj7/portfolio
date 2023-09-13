@@ -1,0 +1,72 @@
+:root {
+    --yellow: rgb(255, 217, 0);
+    --black-25: rgba(25, 25, 25, .25);
+    --black-50: rgba(25, 25, 25, .50);
+    --black-75: rgba(25, 25, 25, .75);
+    --white-50: rgba(255, 255, 255, .50);
+    --degradado-90: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    --degradado-180: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    --degradado-360: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    --degradado-radial: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span {
+    color: var(--yellow);
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background: var(--degradado-180);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5% 10%;
+
+    & #logo {
+        filter: invert(1);
+        width: 90%;
+    }
+
+    & nav ul {
+        list-style: none;
+        display: flex;
+
+        & li {
+            margin: 0 1.5rem;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        & li > a > i:hover {
+            animation: selectSection 0.5s forwards;
+        }
+
+        & a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+header > a {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes selectSection {
+    from {
+        color: white;
+    }
+    to {
+        color: rgb(255, 217, 0);
+    }
+}

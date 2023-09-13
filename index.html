@@ -8,6 +8,9 @@
 
     <script src="script/indexScript.js"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +20,13 @@
     <script src="https://kit.fontawesome.com/74e4d45078.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="black"></div>
+    <div id="loadingScreen">
+        <div class="spinner-grow" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <header>
-        <a href="#"><img src="/img/logo.png" alt="The Coffee Corner" id="logo"></a>
+        <a href="#"><img src="/img/logo.png" style="filter: invert(1)" width="200" alt="The Coffee Corner" id="logo"></a>
         <nav>
             <ul>
                 <li><a target="_blank" href="https://www.linkedin.com/in/pedro-alfred-a65124239/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
@@ -29,30 +36,30 @@
         </nav>
     </header>
     <main>
-        <section class="sec" id="section1">
+        <section class="sec m-1" id="section1">
             <div>
                 <i class="fa-solid fa-mug-hot fa-xl"></i>
-                <h1>Sit, relax, take a coffee and <span>code</span>.</h1>
+                <h1 class="m-0"><strong>Sit, relax, take a coffee and <span>code</span>.</strong></h1>
             </div>
             <p>
                 Welcome to my page, where you can discover all about me in this
                 world called programming while i'm taking some caffeine. Enjoy ;)
             </p>
         </section>
-        <section class="sec" id="section2">
+        <section class="sec m-1" id="section2">
             <div>
                 <i class="fa-solid fa-code fa-xl"></i>
-                <h1>Experience</h1>
+                <h1 class="m-0"><strong>Experience</strong></h1>
             </div>
             <p>
                 On this section you can see all I've realized
                 during my way as a web developer.
             </p>
         </section>
-        <section class="sec" id="section3">
+        <section class="sec m-1" id="section3">
             <div>
                 <i class="fa-solid fa-question fa-xl"></i>
-                <h1>Who am I?</h1>
+                <h1 class="m-0"><strong>Who am I?</strong></h1>
             </div>
             <p>
                 Yup, good question. So you got the answer on this section.

@@ -11,18 +11,19 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-#black {
-    position: absolute;
+#loadingScreen {
+    position: fixed;
     z-index: 1;
     background-color: black;
     width: 100%;
     height: 100vh;
-    animation: start 1s ease-in forwards;
+    animation: start 1.5s ease-in forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 span {
@@ -48,14 +49,11 @@ header {
     align-items: center;
     padding: 2.5% 10%;
 
-    & #logo {
-        filter: invert(1);
-        width: 90%;
-    }
-
     & nav ul {
         list-style: none;
         display: flex;
+        padding: 0;
+        margin: 0;
 
         & li {
             margin: 0 1.5rem;
@@ -210,6 +208,16 @@ footer {
     to {
         opacity: 0%;
         display: none;
+    }
+}
+
+@keyframes loadingSection {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+        display: flex;
     }
 }
 
