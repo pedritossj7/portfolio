@@ -47,6 +47,23 @@ header {
     background-position: center;
 }
 
+#image1 {
+    background: url("/img/germany1.jpg");
+}
+
+#image2 {
+    background: url("/img/germany2.jpg");
+}
+
+#image3 {
+    background: url("/img/germany3.jpg");
+}
+
+#image1, #image2, #image3 {
+    background-position: center;
+    background-size: cover; 
+}
+
 @keyframes selectSection {
     from {
         color: white;
