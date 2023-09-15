@@ -137,7 +137,8 @@ main {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     padding: .5%;
     background: var(--degradado-360);

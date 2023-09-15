@@ -51,6 +51,16 @@ header {
     background-position: center;
 }
 
+#contenedorGrafica {
+    height: 70vh;
+    width: 70vh;
+
+    & #grafica {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
 #image1 {
     background: url("/img/germany1.jpg");
     background-position: center;

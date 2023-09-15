@@ -20,11 +20,11 @@ window.onload = function() {
             labels: ['HTML', 'CSS', 'JS', 'JAVA', 'PHP'],
             datasets: [{
                 data: [90, 85, 80, 70, 70],
-                backgroundColor: ['#FFD900', '#FFB700', '#FF9000', '#FF7000', '#FF5000'],
+                backgroundColor: ['#651366', '#a71a5b', '#e7204e', '#f76e2a', '#f0c505'],
             }]
         },
         options:{
-            responsive: true,
+            responsive: false,
         }
     });
 }

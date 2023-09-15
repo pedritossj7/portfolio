@@ -21,4 +21,7 @@ window.onload = function() {
             window.location = "aboutMe.html";
         }, 1000);
     });
+
+    // MOMENT.JS
+    
 }
