@@ -16,6 +16,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 #loadingScreen {
     position: fixed;
     z-index: 1;
@@ -49,19 +53,20 @@ header {
 
 #image1 {
     background: url("/img/germany1.jpg");
+    background-position: center;
+    background-size: cover; 
 }
 
 #image2 {
     background: url("/img/germany2.jpg");
+    background-position: center;
+    background-size: cover; 
 }
 
 #image3 {
     background: url("/img/germany3.jpg");
-}
-
-#image1, #image2, #image3 {
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 @keyframes selectSection {
@@ -69,7 +74,7 @@ header {
         color: white;
     }
     to {
-        color: rgb(255, 217, 0);
+        color: #ffd900;
     }
 }
 

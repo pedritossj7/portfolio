@@ -7,7 +7,7 @@
     <title>The Coffee Corner ☕ | About Me</title>
 
     <link rel="stylesheet" type="text/css" href="css/aboutMeStyle.css">
-    <script src="script/logoSelectScript.js"></script>
+    <script src="script/aboutMeScript.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://kit.fontawesome.com/74e4d45078.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -53,7 +54,9 @@
                     Fugit cum veniam qui voluptas nulla? Consequatur commodi corporis ea. Quod id explicabo numquam?
                 </p>
             </div>
-            <img class="col-sm-12 col-md-6" src="img/index-bg.jpg">
+            <div class="p-5 col-sm-12 col-md-6 justify-content-center">
+                <canvas id="grafica" class="p-4"></canvas>
+            </div>
         </section>
         <section class="d-flex flex-wrap flex-sm-row flex-md-row-reverse">
             <div class="p-5 col-sm-12 col-md-6 d-flex flex-column justify-content-center">
@@ -65,8 +68,7 @@
                     Fugit cum veniam qui voluptas nulla? Consequatur commodi corporis ea. Quod id explicabo numquam?
                 </p>
             </div>
-            <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-end" id="image1">
-                <p class="text-white">📍 <em>Messel, Germany</em></p>
+            <div class="p-5 col-sm-12 col-md-6 justify-content-center" id="image1">
             </div>
         </section>
 
@@ -80,8 +82,7 @@
                     Fugit cum veniam qui voluptas nulla? Consequatur commodi corporis ea. Quod id explicabo numquam?
                 </p>
             </div>
-            <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-end" id="image2">
-                <p class="text-white">📍 <em>Darmstadt, Germany</em></p>
+            <div class="p-5 col-sm-12 col-md-6 justify-content-center" id="image2">
             </div>
         </section>
         <section class="d-flex flex-wrap flex-sm-row flex-md-row-reverse">
@@ -94,10 +95,13 @@
                     Fugit cum veniam qui voluptas nulla? Consequatur commodi corporis ea. Quod id explicabo numquam?
                 </p>
             </div>
-            <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-end" id="image3">
-                <p class="text-white">📍 <em>HUB31 in Darmstadt, Germany</em></p>
+            <div class="p-5 col-sm-12 col-md-6 justify-content-center" id="image3">
             </div>
         </section>
     </main>
+
+    <footer class="bg-dark">
+        <p class="text-white m-0 p-2 text-center">&copy; 2023 Pedro Alfred</p>
+    </footer>
 </body>
 </html>
