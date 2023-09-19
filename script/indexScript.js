@@ -1,6 +1,6 @@
 'use strict';
 
-window.onload = function() {
+window.addEventListener('DOMContentLoaded', () => {
     let main = document.getElementsByTagName("main")[0];
     let section1 = document.getElementById("section1");
     let section2 = document.getElementById("section2");
@@ -21,7 +21,5 @@ window.onload = function() {
             window.location = "aboutMe.html";
         }, 1000);
     });
-
-    // MOMENT.JS
     
-}
+});

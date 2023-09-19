@@ -32,7 +32,7 @@ html {
     align-items: center;
 }
 
-#logo {
+#logo, #exp {
     cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ i:hover {
 }
 
 header {
-    background: var(--degradado-radial), url("/img/coding.jpg");
+    background: var(--degradado-radial), url("../img/coding.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -62,19 +62,19 @@ header {
 }
 
 #image1 {
-    background: url("/img/germany1.jpg");
+    background: url("../img/germany1.jpg");
     background-position: center;
     background-size: cover; 
 }
 
 #image2 {
-    background: url("/img/germany2.jpg");
+    background: url("../img/germany2.jpg");
     background-position: center;
     background-size: cover; 
 }
 
 #image3 {
-    background: url("/img/germany3.jpg");
+    background: url("../img/germany3.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -105,5 +105,15 @@ header {
     to {
         opacity: 100%;
         display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    #contenedorGrafica {
+        height: 40vh;
+
+        & #grafica {
+            width: 225px;
+        }
     }
 }

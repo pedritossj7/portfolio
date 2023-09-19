@@ -31,7 +31,7 @@ span {
 }
 
 body {
-    background: url("/img/index-bg.jpg");
+    background: url("../img/index-bg.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ main > #section1 {
 
 main > #section2 {
     grid-area: dos;
-    background: var(--degradado-radial), url("/img/e-ray.jpg");
+    background: var(--degradado-radial), url("../img/e-ray.jpg");
     background-size: cover;
     background-position: center;
     justify-content: end;
@@ -92,7 +92,7 @@ main > #section2 {
 
 main > #section3 {
     grid-area: tres;
-    background-image: var(--degradado-radial), url("/img/who-am-i.jpg");
+    background-image: var(--degradado-radial), url("../img/who-am-i.jpg");
     background-size: cover;
     justify-content: end;
 }

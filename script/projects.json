@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Project 1",
+        "start": "April 2023",
+        "end": "June 2023",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu justo turpis. Praesent facilisis finibus risus ut posuere. Nam tempus pellentesque metus ut hendrerit. Donec iaculis libero blandit rhoncus porta. Donec sagittis sit amet augue tincidunt finibus. Vivamus at ullamcorper tortor, in luctus ipsum. Aliquam porttitor dui vitae ornare tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut eu facilisis purus, non pellentesque nulla. Nullam nulla purus, imperdiet vel molestie at, vestibulum quis lacus.",
+        "photos" : ["photo1", "photo2", "photo3"]
+    },
+    {
+        "name": "Project 2",
+        "start": "March 2023",
+        "end": "June 2023",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu justo turpis. Praesent facilisis finibus risus ut posuere. Nam tempus pellentesque metus ut hendrerit. Donec iaculis libero blandit rhoncus porta. Donec sagittis sit amet augue tincidunt finibus. Vivamus at ullamcorper tortor, in luctus ipsum. Aliquam porttitor dui vitae ornare tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut eu facilisis purus, non pellentesque nulla. Nullam nulla purus, imperdiet vel molestie at, vestibulum quis lacus.",
+        "photos" : ["photo1", "photo2", "photo3"]
+    },
+    {
+        "name": "Project 3",
+        "start": "April 2021",
+        "end": "June 2021",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu justo turpis. Praesent facilisis finibus risus ut posuere. Nam tempus pellentesque metus ut hendrerit. Donec iaculis libero blandit rhoncus porta. Donec sagittis sit amet augue tincidunt finibus. Vivamus at ullamcorper tortor, in luctus ipsum. Aliquam porttitor dui vitae ornare tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut eu facilisis purus, non pellentesque nulla. Nullam nulla purus, imperdiet vel molestie at, vestibulum quis lacus.",
+        "photos" : ["photo1", "photo2", "photo3"]
+    }
+]

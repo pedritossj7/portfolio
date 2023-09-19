@@ -7,7 +7,7 @@
     <title>The Coffee Corner ☕ | About Me</title>
 
     <link rel="stylesheet" type="text/css" href="css/aboutMeStyle.css">
-    <script src="script/aboutMeScript.js"></script>
+    <script defer src="script/aboutMeScript.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -27,7 +27,7 @@
     <header class="d-flex flex-column text-white">
         <div class="d-flex flex-row flex-wrap justify-content-around p-3">
             <div class="my-2">
-                <img src="/img/logo.png" style="filter: invert(1)" width="200" alt="The Coffee Corner" id="logo">
+                <img src="./img/logo.png" style="filter: invert(1)" width="200" alt="The Coffee Corner" id="logo">
             </div>
             <nav>
                 <ul class="list-unstyled d-flex align-center my-2">
@@ -43,8 +43,8 @@
         </div>
     </header>
 
-    <main>
-        <section class="d-flex flex-wrap flex-sm-row flex-md-row-reverse justify-content-center">
+    <main class="m-5">
+        <section class="d-flex flex-wrap flex-sm-row flex-md-row-reverse justify-content-center bg-dark text-white">
             <div class="p-5 col-sm-12 col-md-6 d-flex flex-column justify-content-center">
                 <h1><strong>I'm just like you.</strong></h1>
                 <p>
@@ -58,7 +58,7 @@
             </div>
         </section>
 
-        <section class="d-flex flex-wrap flex-row justify-content-center">
+        <section class="d-flex flex-wrap flex-row justify-content-center bg-dark text-white">
             <div class="p-5 col-sm-12 col-md-6 d-flex flex-column justify-content-center">
                 <h1><strong>Let me introduce myself.</strong></h1>
                 <p>
@@ -69,10 +69,10 @@
                 </p>
                 <p>
                     And the best thing about me: i'm 
-                    <span style="color: #651366;">C</span>
-                    <span style="color: #a71a5b;">R</span>
-                    <span style="color: #e7204e;">E</span>
-                    <span style="color: #f76e2a;">A</span>
+                    <span style="color: #a71a5b;">C</span>
+                    <span style="color: #e7204e;">R</span>
+                    <span style="color: #f76e2a;">E</span>
+                    <span style="color: #f0c505;">A</span>
                     <span style="color: #f0c505;">T</span>
                     <span style="color: #f76e2a;">I</span>
                     <span style="color: #e7204e;">V</span>
@@ -88,10 +88,15 @@
             <div class="p-5 col-sm-12 col-md-6 d-flex flex-column justify-content-center align-center">
                 <h1><strong>What about my skills?</strong></h1>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias placeat porro aspernatur, 
-                    perferendis ipsa sapiente rem eum recusandae illo, accusamus modi itaque accusantium iusto 
-                    doloremque amet officiis veniam impedit, dolores molestiae commodi eaque consequuntur mollitia tempore! 
-                    Fugit cum veniam qui voluptas nulla? Consequatur commodi corporis ea. Quod id explicabo numquam?
+                    I have knowledge in a variety of languages, such as HTML, CSS, Java, PHP,
+                    JavaScript, SQL and a little bit of C++ (I've been part of some Arduino projects).
+                </p>
+                <p>
+                    I usually use frameworks at my projects, like Chart.js, OpenStreetMap
+                    and especially Bootstrap.
+                </p>
+                <p>
+                    In a future, I would like to learn some more languages, Python & C++ will be some of them. 😎
                 </p>
             </div>
             <div class="p-4 col-sm-12 col-md-6" id="contenedorGrafica">
@@ -99,15 +104,15 @@
             </div>
         </section>
 
-        <section class="d-flex flex-wrap flex-sm-row flex-md-row-reverse">
+        <section class="d-flex flex-wrap flex-sm-row flex-md-row-reverse bg-dark text-white">
             <div class="p-5 col-sm-12 col-md-6 d-flex flex-column justify-content-center">
-                <h1><strong>Lorem ipsum</strong></h1>
+                <h1><strong>What I've done until now?</strong></h1>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias placeat porro aspernatur, 
-                    perferendis ipsa sapiente rem eum recusandae illo, accusamus modi itaque accusantium iusto 
-                    doloremque amet officiis veniam impedit, dolores molestiae commodi eaque consequuntur mollitia tempore! 
-                    Fugit cum veniam qui voluptas nulla? Consequatur commodi corporis ea. Quod id explicabo numquam?
+                    During my academic training, I did several projects, some of them were
+                    in internships, especially abroad. I had the opportunity to travel in Germany
+                    to collaborate with an amazing startup along my Erasmus experience.
                 </p>
+                <p>You will see more at <span id="exp"><strong>Experience</strong></span>.</p>
             </div>
             <div class="col-sm-12 col-md-6 justify-content-center" id="image3">
             </div>
