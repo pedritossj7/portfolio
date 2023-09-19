@@ -45,7 +45,7 @@ i:hover {
 }
 
 header {
-    background: var(--degradado-radial), url("../img/germany4.jpg");
+    background: var(--degradado-radial), url("https://pedritossj7.github.io/portfolio/img/germany4.jpg");
     background-size: contain;
 }
 

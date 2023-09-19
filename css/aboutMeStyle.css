@@ -45,7 +45,7 @@ i:hover {
 }
 
 header {
-    background: var(--degradado-radial), url("../img/coding.jpg");
+    background: var(--degradado-radial), url("https://pedritossj7.github.io/portfolio/img/coding.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -62,19 +62,19 @@ header {
 }
 
 #image1 {
-    background: url("../img/germany1.jpg");
+    background: url("https://pedritossj7.github.io/portfolio/img/germany1.jpg");
     background-position: center;
     background-size: cover; 
 }
 
 #image2 {
-    background: url("../img/germany2.jpg");
+    background: url("https://pedritossj7.github.io/portfolio/img/germany2.jpg");
     background-position: center;
     background-size: cover; 
 }
 
 #image3 {
-    background: url("../img/germany3.jpg");
+    background: url("https://pedritossj7.github.io/portfolio/img/germany3.jpg");
     background-position: center;
     background-size: cover;
 }
