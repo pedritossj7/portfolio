@@ -49,6 +49,17 @@ header {
     background-size: contain;
 }
 
+#academic {
+    background: var(--degradado-radial), url("/img/computer-workstation.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+}
+
 @keyframes selectSection {
     from {
         color: white;
