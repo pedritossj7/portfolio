@@ -50,7 +50,7 @@ header {
 }
 
 #academic {
-    background: var(--degradado-radial), url("/img/computer-workstation.jpg");
+    background: var(--degradado-radial), url("https://pedritossj7.github.io/portfolio/img/computer-workstation.jpg");
     background-size: cover;
     background-position: center;
 }
