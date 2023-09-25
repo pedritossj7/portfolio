@@ -1,13 +1,13 @@
 [
     {
-        "name": "Project 1",
+        "name": "Project for Erasmus internship: Spinlet mechanism for water sensor positioning",
         "start": "April 2023",
         "end": "June 2023",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu justo turpis. Praesent facilisis finibus risus ut posuere. Nam tempus pellentesque metus ut hendrerit. Donec iaculis libero blandit rhoncus porta. Donec sagittis sit amet augue tincidunt finibus. Vivamus at ullamcorper tortor, in luctus ipsum. Aliquam porttitor dui vitae ornare tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut eu facilisis purus, non pellentesque nulla. Nullam nulla purus, imperdiet vel molestie at, vestibulum quis lacus.",
+        "description": "This prototype consists in a spinlet motor that makes the function of moving the sensor up and down, and measuring the water quality in different positions. For this project, we made use of an Arduino protoboard to communicate with the spinlet and configure the moving function. We have also used Raspberry to communicate itself to the Arduino protoboard with Python and making the serial communication from there thanks to it.",
         "photos" : ["photo1", "photo2", "photo3"]
     },
     {
-        "name": "Project 2",
+        "name": "E-Commerce Project",
         "start": "March 2023",
         "end": "June 2023",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu justo turpis. Praesent facilisis finibus risus ut posuere. Nam tempus pellentesque metus ut hendrerit. Donec iaculis libero blandit rhoncus porta. Donec sagittis sit amet augue tincidunt finibus. Vivamus at ullamcorper tortor, in luctus ipsum. Aliquam porttitor dui vitae ornare tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut eu facilisis purus, non pellentesque nulla. Nullam nulla purus, imperdiet vel molestie at, vestibulum quis lacus.",
