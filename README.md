@@ -2,7 +2,7 @@
 
 Welcome to my portfolio! Where you can find more about me and how able I am to demonstrate my skills :)
 
-## Ver. 25/9/2023/1
+## Ver. 25/9/2023/3
 
 - README implementation.
 - The index page is the ONLY page to not include Bootstrap framework. Thers's only pure HTML and CSS.
