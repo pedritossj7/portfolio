@@ -69,7 +69,7 @@ async function peticion_asincrona(enlace) {
             }
 
             var img_Carousel = document.createElement("img");
-            img_Carousel.src = "https://picsum.photos/1280/720?"+div2.id+j;
+            img_Carousel.src = projects[i].photos[j];
             img_Carousel.setAttribute("class", "d-block w-100");
             img_Carousel.alt = projects[i].photos[j];
 
