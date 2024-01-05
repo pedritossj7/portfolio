@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let section2 = document.getElementById("section2");
     let section3 = document.getElementById("section3");
 
-    let loadingScreen = document.getElementById("loadingScreen");
+    /*let loadingScreen = document.getElementById("loadingScreen");
 
     section2.addEventListener("click", function() {
         loadingScreen.style.animation = "loadingSection 1.5s ease-in forwards";
@@ -20,6 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
         setTimeout(function() {
             window.location = "aboutMe.html";
         }, 1000);
-    });
+    });*/
     
 });

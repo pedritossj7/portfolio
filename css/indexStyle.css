@@ -1,9 +1,9 @@
 :root {
-    --yellow: rgb(255, 217, 0);
-    --black-25: rgba(25, 25, 25, .25);
-    --black-50: rgba(25, 25, 25, .50);
-    --black-75: rgba(25, 25, 25, .75);
-    --white-50: rgba(255, 255, 255, .50);
+    --white: #E9EBEA;
+    --gray: #CECFD1;
+    --black: #141311;
+    --yellow: #FFAA00;
+
     --degradado-90: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     --degradado-180: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     --degradado-360: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
@@ -12,8 +12,59 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    color: var(--white);
 }
 
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+header a {
+    color: var(--black);
+}
+
+body {
+    height: 100vh;
+    background: url("../img/index-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-backdrop-filter: blur(5px) brightness(.5); 
+    backdrop-filter: blur(5px) brightness(.5);
+}
+
+nav {
+    width: 70%;
+}
+
+main {
+    height: 80%;
+}
+
+#main2 {
+    & a {
+        color: var(--yellow);
+        font-size: large;
+    }
+}
+
+#main1, #main2 {
+    animation: start 2s forwards;
+}
+
+@keyframes start {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+        display: none;
+    }
+}
+
+/*
 #loadingScreen {
     position: fixed;
     z-index: 1;
@@ -230,3 +281,4 @@ footer {
         color: rgb(255, 217, 0);
     }
 }
+*/
