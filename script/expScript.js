@@ -2,8 +2,8 @@
 
 // AQUÍ SE LE HIZO UNA PETICIÓN ASÍNCRONA AL JSON DE PROYECTOS
 let URL_github = 'https://pedritossj7.github.io/portfolio/script/projects.json';
-let URL_localhost = '../script/projects.json';
-const URL = URL_localhost;
+let URL_localhost = './script/projects.json';
+const URL = URL_github;
 
 async function peticion_asincrona(enlace) {
     const respuesta = await fetch(enlace);
