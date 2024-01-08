@@ -2,7 +2,7 @@
 
 // AQUÍ SE LE HIZO UNA PETICIÓN ASÍNCRONA AL JSON DE PROYECTOS
 let URL_github = 'https://pedritossj7.github.io/portfolio/script/projects.json';
-let URL_localhost = '../portfolio/script/projects.json';
+let URL_localhost = '../script/projects.json';
 const URL = URL_localhost;
 
 async function peticion_asincrona(enlace) {
@@ -20,7 +20,7 @@ async function peticion_asincrona(enlace) {
             sectionProject.setAttribute("class", "d-flex flex-row flex-lg-row-reverse flex-wrap justify-content-center p-0 mb-3");
         }
         else {
-            sectionProject.setAttribute("class", "d-flex flex-row flex-wrap align-center justify-content-center p-0 mb-3");
+            sectionProject.setAttribute("class", "d-flex flex-row flex-wrap align-center justify-content-center text-end p-0 mb-3");
         }
 
         main.appendChild(sectionProject);

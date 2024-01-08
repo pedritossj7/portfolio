@@ -1,9 +1,9 @@
 :root {
-    --yellow: rgb(255, 217, 0);
-    --black-25: rgba(25, 25, 25, .25);
-    --black-50: rgba(25, 25, 25, .50);
-    --black-75: rgba(25, 25, 25, .75);
-    --white-50: rgba(255, 255, 255, .50);
+    --white: #E9EBEA;
+    --gray: #CECFD1;
+    --black: #141311;
+    --yellow: #FFAA00;
+
     --degradado-90: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     --degradado-180: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     --degradado-360: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
@@ -20,28 +20,16 @@ html {
     box-sizing: border-box;
 }
 
-#loadingScreen {
-    position: fixed;
-    z-index: 1;
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    animation: start 1.5s ease-in forwards;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    background-color: var(--white);
 }
 
-#logo, #exp {
+#logo {
     cursor: pointer;
 }
 
-span {
+span, #exp {
     color: var(--yellow);
-}
-
-i:hover {
-    animation: selectSection 0.5s forwards;
 }
 
 header {
@@ -77,35 +65,6 @@ header {
     background: url("https://pedritossj7.github.io/portfolio/img/germany3.jpg");
     background-position: center;
     background-size: cover;
-}
-
-@keyframes selectSection {
-    from {
-        color: white;
-    }
-    to {
-        color: #ffd900;
-    }
-}
-
-@keyframes start {
-    from {
-        opacity: 100%;
-    }
-    to {
-        opacity: 0%;
-        display: none;
-    }
-}
-
-@keyframes loadingSection {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-        display: flex;
-    }
 }
 
 @media (max-width: 500px) {

@@ -16,12 +16,8 @@
 }
 
 a {
-    color: var(--white);
+    color: var(--yellow);
     text-decoration: none;
-}
-
-header a {
-    color: var(--black);
 }
 
 body {
@@ -36,7 +32,11 @@ body {
 }
 
 nav {
-    width: 70%;
+    width: 80%;
+
+    & ul {
+        background-color: rgba(0, 0, 0, .7);
+    }
 }
 
 main {
@@ -45,7 +45,6 @@ main {
 
 #main2 {
     & a {
-        color: var(--yellow);
         font-size: large;
     }
 }
@@ -63,222 +62,3 @@ main {
         display: none;
     }
 }
-
-/*
-#loadingScreen {
-    position: fixed;
-    z-index: 1;
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    animation: start 1.5s ease-in forwards;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-span {
-    color: var(--yellow);
-}
-
-body {
-    background: url("../img/index-bg.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    height: 100vh;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-rows: 1fr 8fr;
-}
-
-header {
-    background: var(--degradado-180);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2.5% 10%;
-
-    & nav ul {
-        list-style: none;
-        display: flex;
-        padding: 0;
-        margin: 0;
-
-        & li {
-            margin: 0 1.5rem;
-            padding: 0.5rem;
-            text-align: center;
-        }
-
-        & li > a > i:hover {
-            animation: selectSection 0.5s forwards;
-        }
-
-        & a {
-            text-decoration: none;
-            color: white;
-        }
-    }
-}
-
-header > a {
-    display: flex;
-    align-items: center;
-}
-
-main > #section1 {
-    grid-area: uno;
-    font-size: larger;
-}
-
-main > #section2 {
-    grid-area: dos;
-    background: var(--degradado-radial), url("https://pedritossj7.github.io/portfolio/img/e-ray.jpg");
-    background-size: cover;
-    background-position: center;
-    justify-content: end;
-}
-
-main > #section3 {
-    grid-area: tres;
-    background-image: var(--degradado-radial), url("https://pedritossj7.github.io/portfolio/img/who-am-i.jpg");
-    background-size: cover;
-    justify-content: end;
-}
-
-#section2:hover, #section3:hover {
-    animation: selectSection 0.5s forwards;
-    cursor: pointer;
-}
-
-main {
-    display: grid;
-    grid-template-areas: 
-        "uno dos" 
-        "uno tres";
-    padding: 2%;
-
-    & .sec {
-        background-color: var(--black-50);
-        display: flex;
-        font-size: normal;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2%;
-        margin: 2%;
-        border-radius: 2%;
-
-        & div {
-            display: flex;
-            align-items: center;
-            margin: 1% 0;
-
-            & i {
-                margin-right: 2%;
-            }
-        }
-
-        & p {
-            margin: .5% 0;
-        }
-    }
-}
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: .5%;
-    background: var(--degradado-360);
-}
-
-@media (min-width: 550px) {
-    main > #section1 > div {
-        font-size: 6vh;
-    }
-}
-
-@media (max-width: 850px) {
-    main {
-        grid-template-areas:
-            "uno uno"
-            "uno uno"
-            "dos tres"
-            "dos tres";
-    }
-}
-
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-
-        & #logo {
-            margin-bottom: 7.5%;
-        }
-
-        & nav {
-            & ul {
-                flex-wrap: wrap;
-                justify-content: center;
-
-                & li {
-                    padding: .25rem;
-                }
-            }
-        }
-    }
-
-    header > a {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-}
-
-@media (max-width: 550px) {
-    main {
-        grid-template-areas:
-            "uno uno"
-            "uno uno"
-            "dos dos"
-            "tres tres";
-        text-align: center;
-
-        & .sec > div {
-            justify-content: center;
-        }
-    }
-}
-
-@keyframes start {
-    from {
-        opacity: 100%;
-    }
-    to {
-        opacity: 0%;
-        display: none;
-    }
-}
-
-@keyframes loadingSection {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-        display: flex;
-    }
-}
-
-@keyframes selectSection {
-    from {
-        color: white;
-    }
-    to {
-        color: rgb(255, 217, 0);
-    }
-}
-*/

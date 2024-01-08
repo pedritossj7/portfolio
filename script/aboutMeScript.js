@@ -1,29 +1,6 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
-    // Configuración para el logo (evento onclick que activa la pantalla de carga)
-    const logo = document.getElementById("logo");
-
-    logo.addEventListener("click", () => {
-        loadingScreen.style.backgroundColor = "white";
-        loadingScreen.style.animation = "loadingSection 1.5s ease-in forwards";
-        setTimeout(() => {
-            window.location = "index.html";
-        }, 1000);
-    });
-
-    // Configuración para link a la pág. de experiencia
-    const exp = document.querySelector("#exp");
-
-    exp.addEventListener("click", () => {
-        loadingScreen.style.backgroundColor = "white";
-        loadingScreen.style.animation = "loadingSection 1.5s ease-in forwards";
-        setTimeout(() => {
-            window.location = "experience.html";
-        }, 1000);
-    });
-
-
     // Configuración para la gráfica de ChartJS
     let ctx = document.getElementById("grafica").getContext("2d");
 

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Pedro Alfred">
-    <title>The Coffee Corner ☕ | About Me</title>
+    <title>About Me</title>
+    <link rel="icon" href="./img/newLogo.png" type="image/x-icon"/>
 
     <link rel="stylesheet" type="text/css" href="css/aboutMeStyle.css">
     <script defer src="script/aboutMeScript.js"></script>
@@ -20,22 +21,11 @@
     <script src="https://kit.fontawesome.com/74e4d45078.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="loadingScreen">
-        <div class="spinner-grow" role="status">
-        </div>
-    </div>
     <header class="d-flex flex-column text-white">
         <div class="d-flex flex-row flex-wrap justify-content-around p-3">
-            <div class="my-2">
-                <img src="https://pedritossj7.github.io/portfolio/img/logo.png" style="filter: invert(1)" width="200" alt="The Coffee Corner" id="logo">
-            </div>
-            <nav>
-                <ul class="list-unstyled d-flex align-center my-2">
-                    <li class="px-3"><a class="text-white" target="_blank" href="https://www.linkedin.com/in/pedro-alfred-a65124239/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-                    <li class="px-3"><a class="text-white" target="_blank" href="https://github.com/pedritossj7/"><i class="fa-brands fa-github fa-2xl"></i></a></li=>
-                    <li class="px-3"><a class="text-white" target="_blank" href="mailto:pedritossj7@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a></li=>
-                </ul>
-            </nav>
+            <a href="./index.html" class="my-2">
+                <img src="./img/newLogo.png" width="30px" id="logo">
+            </a>
         </div>
         <div class="p-5 text-center">
             <p>You'll be wondering...</p>
@@ -44,25 +34,25 @@
     </header>
 
     <main class="m-5">
-        <section class="d-flex flex-wrap flex-sm-row flex-md-row-reverse justify-content-center bg-dark text-white">
+        <section class="d-flex flex-wrap flex-sm-row flex-md-row-reverse justify-content-center">
             <div class="p-5 col-sm-12 col-md-6 d-flex flex-column justify-content-center">
                 <h1><strong>I'm just like you.</strong></h1>
                 <p>
-                    Like any other person in this planet, we have a thing in common, the especiality that 
+                    Like any other person in this planet, we have a thing in common, the specialty that 
                     makes us unique above all. Some of you may like sports (me too), racing (me too), 
                     or even gaming (uhmmm... yeah, me too hahaha)... 
-                    In my case, coding is one of my main especialities.
+                    In my case, coding is one of my main specialties.
                 </p>
             </div>
             <div class="col-sm-12 col-md-6 justify-content-center" id="image1">
             </div>
         </section>
 
-        <section class="d-flex flex-wrap flex-row justify-content-center bg-dark text-white">
+        <section class="d-flex flex-wrap flex-row justify-content-center">
             <div class="p-5 col-sm-12 col-md-6 d-flex flex-column justify-content-center">
                 <h1><strong>Let me introduce myself.</strong></h1>
                 <p>
-                    My name is Pedro Alfred, i'm 20 years old, and i'm aspiring to be a good 
+                    My name is Pedro Alfred, i'm 21 years old, and i'm aspiring to be a good 
                     web developer, i'm still a beginner in this world, but the best is yet to come.
                     I have a good capacity to resolve issues, I love team-working, collaborating with people 
                     whether the situacion is getting a little bit complicated.
@@ -104,7 +94,7 @@
             </div>
         </section>
 
-        <section class="d-flex flex-wrap flex-sm-row flex-md-row-reverse bg-dark text-white">
+        <section class="d-flex flex-wrap flex-sm-row flex-md-row-reverse text-white" style="background-color: var(--black);">
             <div class="p-5 col-sm-12 col-md-6 d-flex flex-column justify-content-center">
                 <h1><strong>What I've done until now?</strong></h1>
                 <p>
@@ -112,15 +102,11 @@
                     in internships, especially abroad. I had the opportunity to travel in Germany
                     to collaborate with an amazing startup along my Erasmus experience.
                 </p>
-                <p>You will see more at <span id="exp"><strong>Experience</strong></span>.</p>
+                <p>You will see more at <a href="./experience.html" id="exp"><strong>Experience</strong></a>.</p>
             </div>
             <div class="col-sm-12 col-md-6 justify-content-center" id="image3">
             </div>
         </section>
     </main>
-
-    <footer class="bg-dark">
-        <p class="text-white m-0 p-2 text-center">&copy; 2023 Pedro Alfred</p>
-    </footer>
 </body>
 </html>
