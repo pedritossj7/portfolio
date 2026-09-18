@@ -1,7 +1,15 @@
-# My Portfolio
+# Portafolio de Pedro Alfred
 
-Welcome to my portfolio! Where you can find more about me and how able I am to demonstrate my skills :)
+Portafolio personal en una única página (`index.html`), con secciones de
+presentación, sobre mí, habilidades, proyectos, formación y contacto.
 
-## Ver. 8/1/2024/1
+## Estructura
 
-- Now this version have a new brand and a new look as well. All the pages are now accessible.
+- `index.html` — página principal
+- `css/styles.css` — estilos
+- `js/main.js` — interactividad (menú, typing effect, barras de habilidades, filtro de proyectos)
+- `img/` — recursos gráficos
+
+## Stack
+
+HTML, CSS, JavaScript, Bootstrap 5.

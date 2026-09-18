@@ -1,58 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Pedro Alfred">
-    <title>23 | by Pedro Alfred</title>
-    <link rel="icon" href="./img/newLogo.png" type="image/x-icon"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>Pedro Alfred - Desarrollo Web & IA</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMEEwQTBBIi8+Cjx0ZXh0IHg9IjE0IiB5PSI0NyIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMzgiIGZpbGw9IiNGRkZGRkYiPlA8L3RleHQ+CjxjaXJjbGUgY3g9IjQ3IiBjeT0iNDciIHI9IjUuNSIgZmlsbD0iI0U0MDAyQiIvPgo8L3N2Zz4=">
+<meta name="description" content="Portafolio de Pedro Alfred, desarrollador web en transición hacia la Inteligencia Artificial.">
 
-    <script defer src="script/indexScript.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,600;0,700;0,800;1,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" type="text/css" href="./css/indexStyle.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/74e4d45078.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="d-flex justify-content-center">
-        <nav class="m-0">
-            <ul class="rounded list-unstyled fw-bold d-flex justify-content-around p-2 m-2">
-                <li><a href="./aboutMe.html">About</a></li>
-                <li><a href="./experience.html">Experience</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="d-flex flex-wrap justify-content-between align-center">
-        <div id="main1" class="col-12 col-md-6 p-3 p-md-5 d-flex flex-column justify-content-center text-center">
-            <h1>Sit, relax, take a coffee and <strong>code</strong>.</h1>
-            <h3>Welcome to my page!</h3>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#inicio">Pedro Alfred<span class="dot">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav" id="navLinks">
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="inicio">
+  <div class="hero-photo" role="img" aria-label="Retrato en blanco y negro de una persona de pie con los brazos cruzados"></div>
+  <div class="container hero-inner">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="eyebrow-role"><span id="roleText"></span><span class="cursor">&nbsp;</span></div>
+        <h1 class="mt-2 mb-4">Pedro <span class="last-word">Alfred</span></h1>
+        <p class="lead mb-4">
+          Desarrollador web con base en variedad de lenguajes de programación,
+          ahora enfocado en meterle mano a la Inteligencia Artificial,
+          proyecto a proyecto.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#proyectos" class="btn btn-red">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-outline-white">Hablemos</a>
         </div>
-        <div id="main2" class="col-12 col-md-6 p-3 p-md-5 d-flex flex-column justify-content-center text-center">
-            <div class="container">
-                <img src="./img/me.jpg" class="w-50 img-fluid rounded-circle border border-white border-3">
-                <h2 class="mt-3">Pedro Alfred</h2>
-                <h5 class="fw-bold">Web Developer</h5>
-                <ul class="list-unstyled">
-                    <li>Based in Colindres, Spain.</li>
-                    <ul class="mt-3 list-unstyled d-flex justify-content-center">
-                        <li class="mx-2"><a target="_blank" href="https://www.linkedin.com/in/pedro-alfred-a65124239/">LinkedIn</a></li>
-                        <li class="mx-2"><a target="_blank" href="https://github.com/pedritossj7/">GitHub</a></li>
-                    </ul>
-                </ul>
-            </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-coords position-absolute bottom-0 start-0 p-4 d-none d-md-block">
+    Colindres, Cantabria — España
+  </div>
+</header>
+
+<!-- SOBRE MÍ -->
+<section id="sobre-mi">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="section-kicker">Sobre mí</p>
+        <h2 class="section-title">De montar interfaces a entender modelos</h2>
+        <hr class="section-divider">
+        <p class="about-lede">Sigo siendo un poco de todo: curioso con el código, cabezota con los bugs, y ahora también con la IA.</p>
+      </div>
+      <div class="col-lg-6">
+        <p>
+          La programación me empezó a picar antes incluso de estudiar el
+          grado de Desarrollo de Aplicaciones Web, pero las ganas de verdad
+          llegaron con los primeros contactos serios: HTML y CSS, la
+          interactividad que le puedes dar a una página con JavaScript, y
+          sobre todo trabajando con Arduino en las prácticas de Sistemas
+          Microinformáticos y Redes. Ahí fue cuando entendí de qué va esto
+          realmente: no es tanto dominar el algoritmo perfecto como saber
+          encontrar el problema, la satisfacción de arreglarlo y comprobar
+          que no se rompe... y aplicar aquello tan mítico de "si funciona,
+          no lo toques".
+        </p>
+        <p>
+          En el grado superior amplié esa base con Java, bases de datos SQL,
+          PHP y J2EE (aunque siempre se me dio mejor PHP), además de moverme
+          con soltura en servidores LAMP y XAMPP — sumando todo esto a lo que
+          ya había aprendido en el grado medio.
+        </p>
+        <p class="mb-0">
+          Después vino el Erasmus en Alemania, y al volver me costó encontrar
+          trabajo en lo mío: es un sector muy demandado, se pide mucho para
+          un perfil como el mío, y en cuanto algo no encaja del todo, te
+          descartan sin darte la oportunidad de demostrar lo que vales. La
+          IA, en ese sentido, no lo pone más fácil. Pero también creo que con
+          la IA se pueden hacer muchas cosas nuevas — esto no está ni mucho
+          menos acabado, puede que estemos solo al principio de una etapa
+          distinta — y ahí es donde quiero aprovechar todo lo aprendido para
+          no quedarme fuera de lo que viene.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades">
+  <div class="container">
+    <p class="section-kicker">Habilidades</p>
+    <h2 class="section-title">Lo que ya domino, y lo que estoy sumando</h2>
+    <hr class="section-divider">
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="h5 mb-3">Desarrollo web</h3>
+        <div class="skill-row">
+          <div class="skill-name"><span>HTML &amp; CSS</span></div>
+          <div class="skill-track"><div class="skill-fill" data-level="75"></div></div>
         </div>
-    </main>
-    
-    <footer class="d-flex align-center justify-content-center">
-        <img src="./img/newLogo.png" width="30px">
-    </footer>
+        <div class="skill-row">
+          <div class="skill-name"><span>JavaScript</span></div>
+          <div class="skill-track"><div class="skill-fill" data-level="65"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name"><span>Bootstrap</span></div>
+          <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name"><span>PHP &amp; SQL</span></div>
+          <div class="skill-track"><div class="skill-fill" data-level="55"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name"><span>Java / C++ (Arduino)</span></div>
+          <div class="skill-track"><div class="skill-fill" data-level="45"></div></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="h5 mb-3">Rumbo a la IA</h3>
+        <div class="skill-row">
+          <div class="skill-name"><span>Python</span></div>
+          <div class="skill-track"><div class="skill-fill is-learning" data-level="35"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name"><span>Fundamentos de IA / ML</span></div>
+          <div class="skill-track"><div class="skill-fill is-learning" data-level="20"></div></div>
+        </div>
+        <p class="text-muted small mt-4 mb-0">
+          Estas dos barras se irán moviendo hacia la derecha a medida que
+          avance — el resto de la web crecerá con ellas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos" style="background:var(--white);">
+  <div class="container">
+    <p class="section-kicker">Proyectos</p>
+    <h2 class="section-title">Cosas que he construido</h2>
+    <hr class="section-divider">
+
+    <div class="mb-4" id="filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="web">Desarrollo web</button>
+      <button class="filter-btn" data-filter="hardware">Hardware / IoT</button>
+      <button class="filter-btn" data-filter="ia">Inteligencia Artificial</button>
+    </div>
+
+    <div class="row g-4" id="projectGrid">
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="web">
+        <div class="project-card">
+          <span class="tag">tfg · mar-jun 2023</span>
+          <h3>Tienda web</h3>
+          <p>
+            Trabajo de Fin de Grado: una tienda online completa con login y
+            registro de usuarios, edición de datos de perfil, gestión de
+            productos (alta, edición y baja) y carrito de compra, con
+            confirmación de pago simulando la API de PayPal.
+          </p>
+          <div class="stack">PHP · MySQL · HTML · CSS · JavaScript · Bootstrap · Ubuntu Server</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="hardware">
+        <div class="project-card">
+          <span class="tag">erasmus · e.Ray Europa GmbH · 2023</span>
+          <h3>Posicionamiento de sensor con Arduino y Raspberry Pi</h3>
+          <p>
+            Prototipo desarrollado durante mi Erasmus en Alemania: un motor
+            spinlet sube y baja un sensor para medir la calidad del agua en
+            distintas posiciones. Arduino controla el motor y los componentes,
+            mientras una Raspberry Pi se comunica con la placa por puerto
+            serie, maneja el motor y lee los valores del sensor.
+          </p>
+          <div class="stack">Arduino · C++ · Raspberry Pi · Python</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="web">
+        <div class="project-card">
+          <span class="tag">académico · 2023</span>
+          <h3>Sistema de registro con Firebase</h3>
+          <p>
+            Aplicación web de gestión de usuarios con alta, inicio de sesión y
+            validación de datos, conectada a Firebase como backend, hecha
+            durante el ciclo de Desarrollo de Aplicaciones Web.
+          </p>
+          <div class="stack">HTML · CSS · JavaScript · Firebase</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="web">
+        <div class="project-card">
+          <span class="tag">personal · en evolución</span>
+          <h3>Portafolio web (v1 → v2)</h3>
+          <p>
+            Mi primera web personal, construida con Bootstrap para mostrar mi
+            formación y contacto. Esta misma página que estás viendo es la
+            siguiente versión, ya con más JavaScript y una sección dedicada a IA.
+          </p>
+          <div class="stack">HTML · CSS · Bootstrap</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="ia">
+        <div class="project-card placeholder-card">
+          <i class="bi bi-cpu"></i>
+          <h3 class="mt-2">Próximo proyecto de IA</h3>
+          <p class="mb-0">
+            Aquí irá el primer proyecto construido explorando Inteligencia
+            Artificial. De momento, este hueco está reservado a propósito.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FORMACIÓN -->
+<section id="formacion">
+  <div class="container">
+    <p class="section-kicker">Formación</p>
+    <h2 class="section-title">Cómo he llegado hasta aquí</h2>
+    <hr class="section-divider">
+
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="period">2021 — 2023</div>
+            <h3>Desarrollo de Aplicaciones Web</h3>
+            <p class="mb-0 text-muted">IES Ataúlfo Argenta, Castro-Urdiales (Cantabria)</p>
+          </div>
+          <div class="timeline-item">
+            <div class="period">2019 — 2021</div>
+            <h3>Sistemas Microinformáticos y Redes</h3>
+            <p class="mb-0 text-muted">IES Alisal, Santander (Cantabria)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<footer class="contact-footer" id="contacto">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="section-kicker">Contacto</p>
+        <h2 class="mb-3">¿Hablamos de tu próximo proyecto?</h2>
+        <p class="lead">
+          Estoy abierto a oportunidades donde pueda seguir creciendo como
+          desarrollador y dar mis primeros pasos serios en IA.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <a class="contact-link" href="mailto:pedritossj7@gmail.com">
+          <i class="bi bi-envelope"></i> pedritossj7@gmail.com
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/pedro-alfred-a65124239/" target="_blank" rel="noopener">
+          <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a class="contact-link" href="https://github.com/pedritossj7/" target="_blank" rel="noopener">
+          <i class="bi bi-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+    <p class="footer-note d-flex align-items-center gap-2">
+      <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true" style="flex-shrink:0;">
+        <rect width="64" height="64" rx="14" fill="#0A0A0A" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+        <text x="14" y="47" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="38" fill="#FFFFFF">P</text>
+        <circle cx="47" cy="47" r="5.5" fill="#E4002B"/>
+      </svg><span>© <span id="year"></span> Pedro Alfred.</span>
+    </p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
