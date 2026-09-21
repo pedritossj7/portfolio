@@ -92,6 +92,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  document.querySelectorAll('.read-more-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      const desc = btn.previousElementSibling;
+      const wasClamped = desc.classList.contains('is-clamped');
+      desc.classList.toggle('is-clamped');
+      btn.textContent = wasClamped ? 'Ver menos' : 'Leer más';
+      btn.setAttribute('aria-expanded', wasClamped ? 'true' : 'false');
+    });
+  });
+
   document.getElementById('year').textContent = new Date().getFullYear();
 
 });
