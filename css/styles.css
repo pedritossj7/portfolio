@@ -282,6 +282,26 @@
     margin:.6rem 0 .7rem;
     font-weight:700;
   }
+  .project-card .project-desc.is-clamped{
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:4;
+    overflow:hidden;
+  }
+  .read-more-btn{
+    align-self:flex-start;
+    background:none;
+    border:none;
+    padding:0;
+    margin:-.4rem 0 1.1rem;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:.78rem;
+    font-weight:600;
+    color:var(--red);
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  .read-more-btn:hover{color:var(--red-dark);}
   .project-card .stack{
     margin-top:auto;
     padding-top:1.1rem;
