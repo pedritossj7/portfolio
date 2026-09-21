@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const navCollapseEl = document.getElementById('navMenu');
-  const bsCollapse = navCollapseEl ? new bootstrap.Collapse(navCollapseEl, {toggle:false}) : null;
+  const bsCollapse = (navCollapseEl && typeof bootstrap !== 'undefined')
+    ? new bootstrap.Collapse(navCollapseEl, {toggle:false})
+    : null;
   document.querySelectorAll('#navLinks .nav-link').forEach(function(link){
     link.addEventListener('click', function(){
       if (bsCollapse && navCollapseEl.classList.contains('show')) bsCollapse.hide();
