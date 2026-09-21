@@ -289,6 +289,21 @@
     font-size:.82rem;
     color:#444;
   }
+  .project-card .project-links{
+    display:flex;
+    gap:1.1rem;
+    margin-top:.9rem;
+  }
+  .project-card .project-links a{
+    display:inline-flex;
+    align-items:center;
+    gap:.35rem;
+    font-size:.85rem;
+    font-weight:600;
+    color:var(--black);
+    text-decoration:none;
+  }
+  .project-card .project-links a:hover{color:var(--red);}
   .project-card.placeholder-card{
     border:1px dashed rgba(10,10,10,.3);
     background:transparent;
