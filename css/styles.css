@@ -468,7 +468,7 @@
     outline-offset: 3px;
   }
 
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     .d-flex.flex-wrap.gap-3.mt-4 > .btn {
       width: 100%;
     }
