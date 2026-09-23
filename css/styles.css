@@ -442,14 +442,36 @@
 
   /* Botón secundario (versión oscura de tu btn-outline-white) */
   .svc-btn-outline {
+    padding: calc(.75rem - 1px) calc(1.6rem - 1px);
     border: 2px solid var(--svc-black);
+    border-radius: 2px;
     color: var(--svc-black);
     font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .svc-btn-outline i {
+    font-size: 1.1em;
+    line-height: 1;
   }
   .svc-btn-outline:hover,
   .svc-btn-outline:focus-visible {
-    background: var(--svc-black);
-    color: #fff;
+    background: #25D366;
+    border-color: #25D366;
+    color: var(--white);
+  }
+  .svc-btn-outline:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 575.98px) {
+    .d-flex.flex-wrap.gap-3.mt-4 > .btn {
+      width: 100%;
+    }
   }
 
   /* Pasos: es un proceso real, por eso va numerado */
