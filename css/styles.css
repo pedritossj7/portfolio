@@ -402,3 +402,120 @@
     z-index:1000;
   }
   .back-to-top.show{opacity:1; pointer-events:auto;}
+
+  /* ===== WEBS PARA NEGOCIOS (#servicios) ===== */
+  #servicios {
+    background:var(--off);
+    --svc-red: var(--red);
+    --svc-black: var(--black);
+    --svc-line: var(--line-light);
+  }
+
+  /* Bloque de precio */
+  .svc-price {
+    margin-top: 1.75rem;
+    border-top: 3px solid var(--svc-red);
+    padding-top: 1rem;
+  }
+  .svc-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: .6rem 0;
+    border-bottom: 1px solid var(--svc-line);
+  }
+  .svc-price-label {
+    font-weight: 500;
+  }
+  .svc-price-value {
+    font-family: "Archivo", sans-serif;
+    font-weight: 800;
+    font-size: 1.35rem;
+    white-space: nowrap;
+  }
+  .svc-price-note {
+    font-size: .875rem;
+    color: #6c757d;
+    margin: .75rem 0 0;
+  }
+
+  /* Botón secundario (versión oscura de tu btn-outline-white) */
+  .svc-btn-outline {
+    border: 2px solid var(--svc-black);
+    color: var(--svc-black);
+    font-weight: 600;
+  }
+  .svc-btn-outline:hover,
+  .svc-btn-outline:focus-visible {
+    background: var(--svc-black);
+    color: #fff;
+  }
+
+  /* Pasos: es un proceso real, por eso va numerado */
+  .svc-steps {
+    list-style: none;
+    counter-reset: paso;
+    padding: 0;
+    margin: 0;
+  }
+  .svc-steps li {
+    counter-increment: paso;
+    position: relative;
+    padding: 0 0 1.25rem 3.25rem;
+  }
+  .svc-steps li::before {
+    content: counter(paso);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: grid;
+    place-items: center;
+    background: var(--svc-black);
+    color: #fff;
+    font-family: "Archivo", sans-serif;
+    font-weight: 800;
+    border-radius: 50%;
+  }
+  /* Línea que une los pasos */
+  .svc-steps li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: calc(1.125rem - 1px);
+    top: 2.25rem;
+    bottom: 0;
+    width: 2px;
+    background: var(--svc-line);
+  }
+  .svc-steps li:last-child::before {
+    background: var(--svc-red);
+  }
+  .svc-steps h4 {
+    font-family: "Archivo", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: .45rem 0 .25rem;
+  }
+  .svc-steps p {
+    margin: 0;
+    color: #495057;
+  }
+
+  /* Lista de lo incluido */
+  .svc-includes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .svc-includes li {
+    display: flex;
+    gap: .6rem;
+    padding: .45rem 0;
+  }
+  .svc-includes i {
+    color: var(--svc-red);
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
